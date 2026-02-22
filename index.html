@@ -6,176 +6,144 @@
 <title>Giridhar Wagh | Portfolio</title>
 
 <!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
+<!-- AOS Animation -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 
-body{
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    color:white;
-}
-
-@keyframes gradientBG {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-header{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-
-.profile-img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:5px solid white;
-    margin-bottom:20px;
-    transition:0.4s;
-}
-
-.profile-img:hover{
-    transform:scale(1.1);
-}
-
-h1{
-    font-size:40px;
-}
-
-.btn{
-    margin-top:20px;
-    padding:12px 25px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:black;
-    color:white;
-    border:2px solid white;
-}
-
-.section{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.glass{
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius:20px;
-    padding:40px;
-    width:80%;
-    margin:auto;
-}
-
-.project-card{
-    background: rgba(255,255,255,0.1);
-    padding:20px;
-    margin:20px;
-    border-radius:15px;
-    transition:0.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-10px);
-    background: rgba(255,255,255,0.2);
-}
-
-.social i{
-    font-size:25px;
-    margin:10px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.social i:hover{
-    color:#00ffff;
-    transform:scale(1.3);
-}
-
-footer{
-    padding:20px;
-    text-align:center;
-    background:black;
-}
-
-</style>
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 
 <body>
 
-<header>
-    <!-- 🔥 Replace this image link with your photo -->
-    <img src="giri.png" class="profile-img" alt="Profile">
+<!-- Particles Background -->
+<div id="particles-js"></div>
 
-    <h1>Hi, I'm Giridhar 👋</h1>
-    <p>Full Stack Developer | Java | PHP | React</p>
-    <a href="#projects" class="btn">View My Work</a>
+<div class="wrapper">
+
+<!-- HERO SECTION -->
+<header data-aos="fade-up">
+
+    <img src="./img/giri.png" class="profile-img" alt="Profile">
+
+    <h1>Giridhar Wagh</h1>
+    <p class="subtitle">Full Stack Developer | Java | PHP | React</p>
+
+    <div class="hero-buttons">
+        <a href="giri.pdf" class="btn btn-light" download>
+            ⬇ Download Resume
+        </a>
+
+        <a href="mailto:giridhawagh0943@gmail.com" class="btn btn-light">
+            📩 Contact Me
+        </a>
+    </div>
+
 </header>
 
-<section class="section">
-    <div class="glass">
-        <h2>About Me</h2>
-        <p>I am a passionate full stack developer who builds modern web applications.
-           I created an Art Gallery Management System using PHP and MySQL.</p>
+<!-- ABOUT SECTION -->
+<section class="section p" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+        I’m a Full Stack Developer who loves turning ideas into powerful digital experiences. 
+With hands-on experience in Java, Spring Boot, React, and database systems, 
+I build responsive, high-performance applications with clean UI and structured backend logic. 
+I’m constantly learning, experimenting, and improving to stay ahead in the tech world.
+    </p>
+</section>
+
+<!-- PROJECT SHOWCASE -->
+<section class="section" data-aos="fade-up">
+    <h2 class="project-title">Project Showcase</h2>
+
+    <div class="projects">
+
+        <!-- Project 1 -->
+        <a href="project1.html" class="card-link">
+            <div class="card">
+                <img src="./img/art1.png" alt="Art Gallery">
+                <h3>Art Gallery System</h3>
+                <span class="tech">Java • MySQL • MVC</span>
+                <p class="desc">
+                    A complete gallery management system with admin panel and secure database integration.
+                </p>
+            </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="project2.html" class="card-link">
+            <div class="card">
+                <img src="./img/web1.png" alt="Portfolio">
+                <h3>React Portfolio</h3>
+                <span class="tech">React • CSS • Responsive</span>
+                <p class="desc">
+                    Modern animated developer portfolio with smooth transitions and performance optimization.
+                </p>
+            </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="project3.html" class="card-link">
+            <div class="card">
+                <img src="./img/mess1.png" alt="Java App">
+                <h3>Java Application</h3>
+                <span class="tech">Java • Firebase • Android</span>
+                <p class="desc">
+                    Mobile application built using Java & Firebase with authentication and real-time database.
+                </p>
+            </div>
+        </a>
+
     </div>
 </section>
 
-<section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Art Gallery Management System</h3>
-        <p>Built using PHP, MySQL and Bootstrap.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Java Application</h3>
-        <p>Desktop based application using Java.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>React Portfolio</h3>
-        <p>Modern responsive portfolio UI.</p>
-    </div>
-
-</section>
-
-<section class="section">
+<!-- SOCIAL SECTION -->
+<section class="section" data-aos="fade-up">
     <h2>Connect With Me</h2>
     <div class="social">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="https://github.com/giridharwagh350" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/giridharwagh350" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/giridhar_w14" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Giridhar Wagh | Designed with ❤️</p>
+    © 2026 Giridhar Wagh — Apple Inspired Design 🍎
 </footer>
+
+</div>
+
+<!-- AOS Init -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init({ duration: 1000 });
+</script>
+
+<!-- Particles Config -->
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 60 },
+    "size": { "value": 3 },
+    "color": { "value": "#ffffff" },
+    "line_linked": { "enable": true, "color": "#ffffff" },
+    "move": { "speed": 1.5 }
+  }
+});
+</script>
 
 </body>
 </html>

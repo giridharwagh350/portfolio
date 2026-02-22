@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery System | Giridhar Wagh</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.project-container{
+    max-width:1000px;
+    margin:100px auto;
+    padding:60px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(25px);
+    border-radius:30px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.project-container h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.project-container p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.project-section{
+    margin-top:50px;
+}
+
+.project-section h3{
+    margin-bottom:20px;
+    color:#00bfff;
+}
+
+/* ===== GALLERY DESIGN ===== */
+
+.project-gallery{
+    margin-top:40px;
+}
+
+.gallery-main{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(0,191,255,0.5);
+}
+
+.project-buttons{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;   /* 🔥 center horizontally */
+    align-items:center;
+    gap:25px;                 /* spacing between buttons */
+    flex-wrap:wrap;           /* responsive for mobile */
+}
+</style>
+
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<div class="wrapper">
+
+<div class="project-container">
+
+<h1>🎨 Art Gallery Management System</h1>
+
+<p>
+The Art Gallery Management System is a full-stack application designed to manage artworks, exhibitions, and users efficiently. 
+It provides an intuitive interface for administrators to control content and maintain secure database operations.
+</p>
+
+<!-- ===== MAIN IMAGE ===== -->
+<div class="project-gallery">
+
+    <img src="./img/art1.png" alt="Main Project Screenshot" class="gallery-main">
+
+    <!-- ===== IMAGE GRID ===== -->
+    <div class="gallery-grid">
+        <img src="./img/art2.png" alt="">
+        <img src="./img/art3.png" alt="">
+        <img src="./img/art4.png" alt="">
+        <img src="./img/art5.png" alt="">
+    </div>
+    
+    <div class="project-buttons">
+    <a href="https://github.com/giridharwagh350/ArtGallery" target="_blank" class="btn btn-light">
+        💻 View GitHub
+    </a>
+
+</div>
+
+</div>
+
+<div class="project-section">
+    <h3>🚀 Key Features</h3>
+    <ul>
+        <li>Admin dashboard for managing artworks</li>
+        <li>User authentication & secure login</li>
+        <li>Artwork upload and management system</li>
+        <li>Database integration with MySQL</li>
+        <li>Responsive design for better usability</li>
+    </ul>
+</div>
+
+<div class="project-section">
+    <h3>🛠 Technologies Used</h3>
+    <p>Java, MySQL, JDBC, MVC Architecture, HTML, CSS</p>
+</div>
+
+<div class="project-buttons">
+
+    <a href="index.html" class="btn btn-light">
+        ⬅ Back to Portfolio
+    </a>
+</div>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 60 },
+    "size": { "value": 3 },
+    "color": { "value": "#ffffff" },
+    "line_linked": { "enable": true, "color": "#ffffff" },
+    "move": { "speed": 1.5 }
+  }
+});
+</script>
+
+</body>
+</html>
