@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giridhar Wagh | Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color:white;
+}
+
+@keyframes gradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.1);
+}
+
+h1{
+    font-size:40px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:black;
+    color:white;
+    border:2px solid white;
+}
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.glass{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:40px;
+    width:80%;
+    margin:auto;
+}
+
+.project-card{
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    background: rgba(255,255,255,0.2);
+}
+
+.social i{
+    font-size:25px;
+    margin:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social i:hover{
+    color:#00ffff;
+    transform:scale(1.3);
+}
+
+footer{
+    padding:20px;
+    text-align:center;
+    background:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- 🔥 Replace this image link with your photo -->
+    <img src="https://via.placeholder.com/180" class="profile-img" alt="Profile">
+
+    <h1>Hi, I'm Giridhar 👋</h1>
+    <p>Full Stack Developer | Java | PHP | React</p>
+    <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section class="section">
+    <div class="glass">
+        <h2>About Me</h2>
+        <p>I am a passionate full stack developer who builds modern web applications.
+           I created an Art Gallery Management System using PHP and MySQL.</p>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Art Gallery Management System</h3>
+        <p>Built using PHP, MySQL and Bootstrap.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Java Application</h3>
+        <p>Desktop based application using Java.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>React Portfolio</h3>
+        <p>Modern responsive portfolio UI.</p>
+    </div>
+
+</section>
+
+<section class="section">
+    <h2>Connect With Me</h2>
+    <div class="social">
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Giridhar Wagh | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
